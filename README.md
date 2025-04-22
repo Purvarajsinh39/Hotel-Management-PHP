@@ -16,7 +16,7 @@
 - **Database Name:** `hotel_management`
 
 ## Developer Info
-- **Developer:** Vaghela Purvarajsinh (D54)
+- **Developer:** Vaghela Purvarajsinh
 
 ## References
 - **Background Images:** [gettyimages.in](https://www.gettyimages.in/)
