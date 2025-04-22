@@ -1,70 +1,53 @@
-Hotel Management System
-Project Info
-Name of the Project: Hotel Management System
+# Hotel Management System
 
-Developed by: Vaghela Purvarajsinh (D54)
+> Hotel Management System is a web-based application developed using HTML, CSS, PHP, JS, AJAX, and MySQL. It allows admin and users to manage hotel bookings, rooms, and customer data efficiently. Developed by Vaghela Purvarajsinh as a Semester 3 college project using XAMPP, VS Code, and PhpMyAdmin.
 
-College Project: Semester 3
+## Project Info
+- **Project Name:** Hotel Management System
+- **Developed By:** Vaghela Purvarajsinh (D54)  
+- **College Project:** Semester 3
 
-Software Requirements
-Code Editor: VS Code (or any other code editor)
+## Software Requirements
+- **Code Editor:** VS Code (or any code editor)
+- **Server:** XAMPP (Apache, PhpMyAdmin)
+- **Browser:** Any (Edge, Chrome, etc.)
 
-Server: XAMPP (Apache, PhpMyAdmin)
+## Database Info
+- **Database Name:** `hotel_management`
 
-Browser: Any (Edge, Chrome, etc.)
+## Developer Info
+- **Developer:** Vaghela Purvarajsinh (D54)
 
-Database Info
-Database Name: hotel_management
+## References
+- **Background Images:** [gettyimages.in](https://www.gettyimages.in/)
+- **Icons:** [flaticon.com](https://www.flaticon.com/)
+- **Styling Help:** [w3schools.com](https://www.w3schools.com/)
+- **Learning Resources:** [geeksforgeeks.org](https://www.geeksforgeeks.org/)
 
-Developer Info
-Developer: Vaghela Purvarajsinh (D54)
+## Admin Login Details
+- **Username:** `Admin`
+- **Password:** `123456`
 
-References
-Background Images: gettyimages.in
+## User Login Details
+- **Username:** `purvarajsinh`
+- **Password:** `12345`
 
-Icons: flaticon.com
+## How to Run the Project
 
-Styling Help: w3schools.com
+1. **Install XAMPP** if not already installed.
+2. **Create a folder** named `Hotel_Management` in `C:\xampp\htdocs`.
+3. **Paste all project files** inside the `Hotel_Management` folder.
+4. **Start Apache and MySQL** from the XAMPP Control Panel.
+5. **Create a new database**:
+   - Open [PhpMyAdmin](http://localhost/phpmyadmin/).
+   - Create a database named `hotel_management`.
+6. **Import the database**:
+   - Select the `hotel_management` database.
+   - Go to the **Import** tab.
+   - Import the SQL file located in `Hotel_Management/Database`.
+7. **Run the project**:
+   - Open your browser.
+   - Visit: [http://localhost/Hotel_Management](http://localhost/Hotel_Management)
+8. **Login** using the provided Admin or User credentials.
 
-Learning Resources: geeksforgeeks.org
-
-Admin Login Details
-Username: Admin
-
-Password: 123456
-
-User Login Details
-Username: purvarajsinh
-
-Password: 12345
-
-How to Run the Project
-Install XAMPP if you haven't already.
-
-Create a folder named Hotel_Management in C:\xampp\htdocs.
-
-Paste all the project files inside the Hotel_Management folder.
-
-Open XAMPP Control Panel and start Apache and MySQL.
-
-Create a database:
-
-Open PhpMyAdmin.
-
-Create a new database named hotel_management.
-
-Import the database:
-
-Go to the hotel_management database you just created.
-
-Click on the Import tab.
-
-Import the .sql file from the Hotel_Management/Database folder.
-
-Run the Project:
-
-Open your browser.
-
-Enter the URL: http://localhost/Hotel_Management
-
-Login using Admin or User credentials provided above.
+---
