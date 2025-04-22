@@ -1,0 +1,279 @@
+/* Reset default margins and paddings for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f6fa;
+ 
+}
+
+/* Navigation Bar */
+.navbar {
+  width: 100%;
+  height: 70px;
+  background: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background */
+  backdrop-filter: blur(10px); /* Blur effect for the background */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px; /* Combined padding */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Section (Left) */
+.navbar .profile {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Profile image remains circular */
+  margin-right: 15px;
+  border: 2px solid #fff;
+}
+
+.navbar .profile h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Center: Menu Items */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar ul li.active a,
+.navbar ul li a:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* Right: Logout and Admin Buttons */
+.user-menu {
+  display: flex;
+  align-items: center;
+}
+
+.user-menu a {
+  margin-left: 20px;
+}
+
+.user-menu a img {
+  width: 40px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border-radius: 0; /* Remove circular border for admin and logout icons */
+}
+
+.user-menu a img:hover {
+  transform: scale(1.1);
+}
+
+/* About Section Styles */
+.about-section {
+  max-width: 1200px; /* Limits the width of the content */
+  margin: 100px auto 50px; /* Adjusts top margin for spacing under the navbar */
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for better readability */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center;
+}
+
+/* Heading Styles */
+.about-section h1 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.about-section h2 {
+  font-size: 28px;
+  color: #34495e;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.about-section h3 {
+  font-size: 24px;
+  color: #34495e;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Paragraph Styles */
+.about-section p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+/* List Styles */
+.about-section ul {
+  list-style: disc;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.about-section ul li {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Developer List Styles */
+.developer-list {
+  margin-top: 30px;
+  padding-left: 0;
+}
+
+.developer-list li {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+  text-align: left;
+}
+
+/* Highlight important text */
+.about-section strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 20px;
+  }
+  
+  .about-section h1 {
+    font-size: 28px;
+  }
+  
+  .about-section h2 {
+    font-size: 24px;
+  }
+  
+  .about-section h3 {
+    font-size: 20px;
+  }
+  
+  .about-section p,
+  .about-section ul li,
+  .developer-list li {
+    font-size: 16px;
+  }
+}
+
+/* Developer List Styles */
+.developer-list li {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+  text-align: left;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2); /* Subtle background */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background and scale */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.developer-list li:hover {
+  background-color: rgba(52, 152, 219, 0.3); /* Add blue tint on hover */
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover for depth */
+}
+
+/* Transition adjustments */
+.developer-list li:hover strong {
+  color: #3498db; /* Highlight important text in blue on hover */
+  font-weight: 700; /* Increase weight for emphasis */
+}
+
+/* General Styling for Left-Aligned Headings */
+.about-section h1,
+.about-section h2,
+.about-section h3 {
+  text-align: left; /* Aligns heading text to the left */
+  color: #2c3e50; /* Dark shade of gray/blue for text */
+  padding-left: 10px; /* Padding for spacing on the left */
+  margin-bottom: 20px;
+  border-left: 4px solid #3498db; /* Left border for a visual accent */
+  padding-left: 15px; /* Additional padding to offset the border */
+  font-weight: 700; /* Bold font for emphasis */
+  transition: color 0.3s ease, border-left-color 0.3s ease; /* Smooth transition effects */
+}
+
+/* Specific Styles for Each Heading Size */
+.about-section h1 {
+  font-size: 36px; /* Larger font size for H1 */
+  margin-top: 40px; /* Extra top margin for spacing */
+}
+
+.about-section h2 {
+  font-size: 28px; /* Medium font size for H2 */
+}
+
+.about-section h3 {
+  font-size: 24px; /* Smaller font size for H3 */
+}
+
+/* Hover Effect for Headings */
+.about-section h1:hover,
+.about-section h2:hover,
+.about-section h3:hover {
+  color: #3498db; /* Changes the text color to blue on hover */
+  border-left-color: #2980b9; /* Changes border color to a darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section h1 {
+    font-size: 28px;
+  }
+  
+  .about-section h2 {
+    font-size: 24px;
+  }
+  
+  .about-section h3 {
+    font-size: 20px;
+  }
+}
+

@@ -1,0 +1,171 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 220px;
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  height: 1900px;
+  text-align: center; /* Centers the content within the sidebar */
+}
+
+.sidebar .profile {
+  margin-bottom: 20px;
+}
+
+.sidebar .profile img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.sidebar .profile h3 {
+  margin: 10px 0;
+}
+
+.sidebar .profile p {
+  color: #adb5bd;
+}
+
+.sidebar ul {
+  list-style: none; /* Removes bullet points from list */
+  padding: 0; /* Removes default padding */
+}
+
+.sidebar ul li {
+  padding: 35px 0;
+  color: #f8f9fa;
+  cursor: pointer;
+  border-bottom: 1px solid #495057;
+  text-align: center;
+}
+
+.sidebar ul li a { /* This targets the links within the list items */
+  color: #f8f9fa; /* Ensures link text is visible */
+  text-decoration: none; /* Removes underline from links */
+  display: block; /* Makes the whole list item clickable */
+}
+
+.sidebar ul li.active,
+.sidebar ul li:hover {
+  background-color: #495057;
+}
+
+/* Optionally, add hover effect for links */
+.sidebar ul li a:hover {
+  text-decoration: none; /* Adds underline on hover */
+}
+
+/* Main content styling */
+.main-content {
+  flex: 1; /* Takes up the remaining space next to the sidebar */
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.user-menu img:first-of-type {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 20px; /* Aligns the user icon */
+}
+
+.user-menu img:nth-of-type(2) {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+/* About Us Section Styling */
+.about-section {
+  padding: 30px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  line-height: 1.8; /* Increases spacing between sentences */
+}
+
+.about-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #343a40; /* Darker text for headers */
+  border-bottom: 2px solid #495057; /* Underline */
+  padding-bottom: 10px;
+}
+
+.about-section h2 {
+  font-size: 28px;
+  margin-top: 30px;
+  color: #495057;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #adb5bd;
+}
+
+.about-section h3 {
+  font-size: 24px;
+  margin-top: 15px;
+  color: #6c757d;
+}
+
+.about-section p {
+  font-size: 16px;
+  margin: 15px 0;
+  line-height: 1.7;
+  color: #495057; /* Softer text color for readability */
+}
+
+.developer-list {
+  list-style-type: disc;
+  margin-left: 40px;
+  padding-left: 10px;
+}
+
+.developer-list li {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-left: 4px solid #495057; /* Adds a colored line to the left */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow to lift each item */
+  border-radius: 5px;
+}
+
+.developer-list li strong {
+  font-size: 18px;
+  color: #343a40;
+}
+
+.about-section ul li {
+  margin-bottom: 10px;
+}
+
+.about-section ul {
+  margin: 20px 0;
+}
+
+.about-section ul li {
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.about-section ul li strong {
+  color: #343a40;
+}
+
+

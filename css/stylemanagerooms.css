@@ -1,0 +1,196 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #f8f9fa;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 220px;
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  height: 900px;
+  text-align: center; /* Centers the content within the sidebar */
+}
+
+.sidebar .profile {
+  margin-bottom: 20px;
+}
+
+.sidebar .profile img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.sidebar .profile h3 {
+  margin: 10px 0;
+}
+
+.sidebar .profile p {
+  color: #adb5bd;
+}
+
+.sidebar ul {
+  list-style: none; /* Removes bullet points from list */
+  padding: 0; /* Removes default padding */
+}
+
+.sidebar ul li {
+  padding: 35px 0;
+  color: #f8f9fa;
+  cursor: pointer;
+  border-bottom: 1px solid #495057;
+  text-align: center;
+}
+
+.sidebar ul li a { /* This targets the links within the list items */
+  color: #f8f9fa; /* Ensures link text is visible */
+  text-decoration: none; /* Removes underline from links */
+  display: block; /* Makes the whole list item clickable */
+}
+
+.sidebar ul li.active,
+.sidebar ul li:hover {
+  background-color: #495057;
+}
+
+/* Optionally, add hover effect for links */
+.sidebar ul li a:hover {
+  text-decoration: none; /* Adds underline on hover */
+}
+
+
+/* Main content styling */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-menu img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  float: right ;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 5px;
+} 
+
+.header h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.room-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.add-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Button styles */
+.btn {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Top and bottom padding, left and right padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Allow margin */
+  transition: background-color 0.3s; /* Transition effect */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Disabled button styles */
+.btn:disabled {
+  background-color: #cccccc; /* Grey background for disabled state */
+  cursor: not-allowed; /* Not allowed cursor */
+}
+
+/* Styling for booked rooms */
+.text-danger {
+  color: red; /* Red color for 'Booked' status */
+  font-weight: bold; /* Bold text */
+}
